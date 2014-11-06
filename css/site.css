@@ -1,0 +1,19 @@
+body {
+}
+
+.navbar {
+  height: 100px;
+  background-color: #fff;
+  margin-bottom:0;
+}
+
+.navbar-nav > li > a {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  line-height: 100px;
+}
+
+.intro {
+  background: url('../images/intro.jpg') top center;
+  height:730px;
+}
