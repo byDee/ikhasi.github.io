@@ -8,26 +8,70 @@
     <link href="css/site.css" rel="stylesheet">
   </head>
   <body>
-    <nav class="navbar" role="navigation">
-      <div class="container">
+    <nav class="navbar navbar-fixed-top navbar-default" role="navigation">
+      <div class="container-fluid">
         <div class="navbar-header">
-          <a class="navbar-brand" href="#"><img alt="Brand" src="images/logo.png"></a>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img alt="ikhasi digit" src="images/logo.png"></a>
         </div>
+
+        <!-- LINKS bo -->
+
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#top">Home</a></li>
             <li><a href="#our-craft">Our Craft</a></li>
-            <li><a href="#about-us">About Us</a></li>
-            <li><a href="hire-us">Hire Us</a></li>
+            <li><a href="#the-tech-stuff">The Tech Stuff</a></li>
+            <li><a href="#how-we-work">How we work</a></li>
+            <li><a href="#our-clients">Our Clients</a></li>
+            <li><a href="#who-we-are">Who we are</a></li>
+            <li><a href="#hire-us">Hire Us</a></li>
           </ul>
         </div>
-      </div>
     </nav>
-    <div class="content-fluid">
+    <div class="content-fluid" id="top">
       <div class="intro">
       </div>
     </div>
-    <div class="container-fluid" id="our-craft">
+
+    <!-- intro / about us -->
+
+    <div class="container-fluid offset-anchor" id="about-us">
+      <div class="container">
+          <div class="row text-center">
+            <h3 class="lead">ikhasi digital is a software developer and design studio, situated in Cape Town, South Africa.</h3>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6">
+              <p>If you can dream it, we can build it for you!</p>
+              <p>We specialize in developing both web and mobile applications, helping you to transform your businesses into one of the industry leaders of today.</p>
+              <p>Not sure what it is that you need? Or can’t explain exactly what it is you want? Don’t worry, with our expertise there’s always a bright light at the end of the tunnel!</p>
+              <p>Oh, and if you prefer rainbows, together we can make sure that the gold at the end of the rainbow is within your reach!</p>
+            </div>
+            <div class="col-lg-6">
+              <p>We, at ikhasi digital, have an indept understanding of the industry. This means that we don’t just develop amazing apps for all our valuable clients, we take it up a notch or two - we take our client's ideas to the next level!</p>
+              <p>You like being at the top of the ladder don’t you? We can help you get there! Partnering with us is a no brainer.</p>
+              <ul>
+                <li>Do you have a startup idea?</li>
+                <li>Do you want to grow your business?</li>
+              </ul>
+              <p>Come on, drop us a line, give us a ring.</p>
+            </div>
+          </div>
+          <div class="row text-center">
+            <p class="lead">We pride ourselves on having amazing relationships with our clients.</p>
+          </div>
+        </div>
+      </div>
+        <!-- Our craft -->
+
+    <div class="container-fluid offset-anchor" id="our-craft">
       <div class="container">
         <h2 class="text-center">Our Craft</h2>
         <div class="row">
@@ -38,10 +82,15 @@
               </div>
               <div class="col-lg-8">
                 <h3>Consulting Services</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lacinia risus id tortor commodo, nec fermentum nisl consectetur. </p>
+                <p>You're in luck if you need a company that can consult and mentor in the following areas:</p>
+                <ul>
+                  <li>Software Development Life Cycle</li>
+                  <li>Scaling of Product Development</li>
+                </ul>
+                <p>We use Open Source technologies, which include continuous integration and deployment, infrastructure provisioning, auto scaling, and team communication and collaboration.</p>
               </div>
             </div>
-          </div> 
+          </div>
           <div class="col-lg-4">
             <div class="row">
               <div class="col-lg-4">
@@ -49,7 +98,14 @@
               </div>
               <div class="col-lg-8">
                 <h3>Mobile Development</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lacinia risus id tortor commodo, nec fermentum nisl consectetur. </p>
+                <p>If you’re looking for a smartphone or tablet application then ikhasi digital are the ones to call!</p>
+                <p>We specialize in all forms of mobile app design and development including:</p>
+                <ul>
+                  <li>iPhone apps</li>
+                  <li>Android apps</li>
+                  <li>Blackberry apps</li>
+                  <li>Windows phone apps</li>
+                </ul>
               </div>
             </div>
           </div>
@@ -60,7 +116,8 @@
               </div>
               <div class="col-lg-8">
                 <h3>Web Development</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lacinia risus id tortor commodo, nec fermentum nisl consectetur. </p>
+                <p>Do you need a dynamic, spunky web site that makes you stand out from the rest?</p>
+                <p>Yes, you’ve guessed it! We also specialize in Web development!</p>
               </div>
             </div>
           </div>
@@ -73,10 +130,34 @@
               </div>
               <div class="col-lg-8">
                 <h3>Application Development</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lacinia risus id tortor commodo, nec fermentum nisl consectetur. </p>
+                <p>If you’re in need of an app that can run in a web browser on you’re computer, then you’ve come to the right place!</p>
+                <p>We can develop application software that you can access in a web browser such as Internet Explorer, Safari, and Google Chrome (to name a few).</p>
+                <p>These high end web applications that we develop are for:</p>
+                <ul>
+                  <li>e-Commerce</li>
+                  <li>Business Processes</li>
+                  <li>Video streaming applications</li>
+                </ul>
               </div>
             </div>
-          </div> 
+          </div>
+            <div class="col-lg-4">
+              <div class="row">
+                <div class="col-lg-4">
+                  <img src="images/Slice-3.jpg"/>
+                </div>
+                <div class="col-lg-8">
+                  <h3>Offshore outsourcing</h3>
+                  <p>So we’re in South Africa, but you’re somewhere else in the world. We can still develop for you! Our development solutions know no boundaries!</p>
+                  <p>Do you:</p>
+                  <ul>
+                    <li>need someone with technical know-how?</li>
+                    <li>need more hands onboard?</li>
+                  </ul>
+                  <p>We can help YOU!</p>
+                </div>
+              </div>
+            </div>
           <div class="col-lg-4">
             <div class="row">
               <div class="col-lg-4">
@@ -84,53 +165,24 @@
               </div>
               <div class="col-lg-8">
                 <h3>Managed Hosting</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lacinia risus id tortor commodo, nec fermentum nisl consectetur. </p>
+                <p>We’re like a one-stop-shop! No need for you to worry about hosting, we offer both web and email hosting</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-  <div class="container" id="our-work">
-    <h2 class="text-center">Our Clients</h2>
-    <div class="row">
-      <div class="col-lg-4 text-center">
-        <img src="images/clients/dft.jpg"/>
-      </div> 
-      <div class="col-lg-4 text-center">
-        <img src="images/clients/inboundsound.png"/>
-      </div>
-    </div>
-  </div>
-<div class="container-fluid" id="about-us">
-  <div class="container">
-    <h2 class="text-center">About Us</h2>
-      <div class="row text-center">
-        <p class="lead">ikhasi digital is a software developer and design studio, situated in Cape Town, South Africa.</p>
-      </div>
 
-      <div class="row">
-        <div class="col-lg-6">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse suscipit, massa at pellentesque porttitor, purus nibh dapibus nisl, sit amet tristique mauris velit nec massa. Mauris eu arcu in massa hendrerit viverra. Morbi sollicitudin cursus est, sed luctus tortor eleifend vel. Quisque malesuada laoreet ipsum, at luctus augue ullamcorper sed. In a scelerisque mauris. Quisque ultrices orci eu erat vehicula tristique. Integer euismod fringilla augue et posuere. Maecenas in sagittis eros.</p>
-          <p>Maecenas et velit eu nisl ullamcorper ornare eget sit amet ante. Proin rutrum tellus sed ipsum rhoncus pharetra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean nec luctus felis, a facilisis risus. In diam lacus, sagittis a placerat sit amet, consequat quis leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec nec lorem mattis, pharetra nibh sit amet, auctor nisi. Sed venenatis quis arcu feugiat porta. Morbi sed ex id mi vehicula sagittis. Ut hendrerit magna lorem, at rutrum ante dictum sed. Curabitur dapibus odio elit, id hendrerit nulla consequat vitae. Suspendisse at ante nibh. Proin venenatis justo quis ipsum semper molestie. Nam consequat, est sit amet mollis ultrices, dui massa congue lacus, ac pharetra tortor nibh nec elit.</p>
-        </div>
-        <div class="col-lg-6">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse suscipit, massa at pellentesque porttitor, purus nibh dapibus nisl, sit amet tristique mauris velit nec massa. Mauris eu arcu in massa hendrerit viverra. Morbi sollicitudin cursus est, sed luctus tortor eleifend vel. Quisque malesuada laoreet ipsum, at luctus augue ullamcorper sed. In a scelerisque mauris. Quisque ultrices orci eu erat vehicula tristique. Integer euismod fringilla augue et posuere. Maecenas in sagittis eros.</p>
-        </div>
-      </div>
-      <div class="row text-center">
-        <p class="lead">We pride ourselves on having amazing relationships with our clients.</p>
-      </div>
-    </div>
-    
-  </div>
-    <div class="container-fluid" id="the-tech-stuff">
+</div>
+  <!-- The Tech Stuff -->
+
+    <div class="container-fluid offset-anchor" id="the-tech-stuff">
       <div class="container">
         <div class="text-center">
         <h2>The Tech Stuff</h2>
-        <p class="lead">We use a wide range of technologies ot make ideas become reality</p>
+        <p class="lead">We use a wide range of technologies to make ideas become reality</p>
       </div>
+
+
         <div class="row">
           <div class="col-lg-4">
             <div class="row">
@@ -139,85 +191,97 @@
               </div>
               <div class="col-lg-8">
                 <h3>Ruby on Rails</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lacinia risus id tortor commodo, nec fermentum nisl consectetur. </p>
-              </div>
-            </div>
-          </div> 
-          <div class="col-lg-4">
-            <div class="row">
-              <div class="col-lg-4">
-                <img src="images/tech/node.png"/>
-              </div>
-              <div class="col-lg-8">
-                <h3>Node.js</h3>
-                <p>Lorem ipsum lor sit amet, consectetur adipiscing elit. Praesent lacinia risus id tortor commodo, nec fermentum nisl consectetur. </p>
+                <p>Ruby on Rails is an open-source web framework that’s optimized for programmer happiness and sustainable productivity. It lets you write beautiful code by favouring convention over configuration.</p>
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
-            <div class="row">
+
+
+            <div class="col-lg-4">
+              <div class="row">
+                <div class="col-lg-4">
+                  <img src="images/tech/openstack.png"/>
+                </div>
+                <div class="col-lg-8">
+                  <h3>Openstack</h3>
+                  <p>OpenStack software controls large pools of compute, storage, and networking resources throughout a datacentre, managed through a dashboard or via the OpenStack API.</p>
+                </div>
+              </div>
+            </div>
               <div class="col-lg-4">
+                <div class="row">
+                  <div class="col-lg-4">
                 <img src="images/tech/ubuntu.png"/>
               </div>
               <div class="col-lg-8">
                 <h3>Ubuntu</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lacinia risus id tortor commodo, nec fermentum nisl consectetur. </p>
+                <p>Fast, free and incredibly easy to use, the Ubuntu operating system powers millions of desktop PCs, laptops and servers around the world.</p>
               </div>
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="row">
-              <div class="col-lg-4">
-                <img src="images/tech/openstack.png"/>
-              </div>
-              <div class="col-lg-8">
-                <h3>Openstack</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lacinia risus id tortor commodo, nec fermentum nisl consectetur. </p>
-              </div>
-            </div>
-          </div> 
-          <div class="col-lg-4">
-            <div class="row">
-              <div class="col-lg-4">
-                <img src="images/tech/swift.png"/>
+
+
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="row">
+                <div class="col-lg-4">
+              <img src="images/tech/swift.png"/>
               </div>
               <div class="col-lg-8">
                 <h3>Objective-C / Swift</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lacinia risus id tortor commodo, nec fermentum nisl consectetur. </p>
+                <p>Objective-C is a general-purpose, object-oriented programming language that is the main programming language used by Apple for the OS X and iOS operating systems, and their respective application programming interfaces (APIs), Cocoa and Cocoa Touch. Swift is an innovative new programming language for Cocoa and Cocoa Touch.</p>
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
-            <div class="row">
+
+            <div class="col-lg-4">
+              <div class="row">
+                <div class="col-lg-4">
+                  <img src="images/tech/java.png"/>
+                </div>
+                <div class="col-lg-8">
+                  <h3>Java</h3>
+                  <p>Java is a general-purpose computer programming language that is concurrent, class-based, object-oriented, and specifically designed to have as few implementation dependencies as possible. It is intended to let application developers "write once, run anywhere" meaning that compiled Java code can run on all platforms that support Java without the need for recompilation.</p>
+                </div>
+              </div>
+            </div>
+
+
               <div class="col-lg-4">
+                <div class="row">
+                  <div class="col-lg-4">
+                <img src="images/tech/node.png"/>
+              </div>
+              <div class="col-lg-8">
+                <h3>Node.js</h3>
+                <p>Node.js is a platform built on Chrome's JavaScript runtime for easily building fast, scalable network applications. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient, perfect for data-intensive real-time applications that run across distributed devices.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="row">
+                <div class="col-lg-4">
                 <img src="images/tech/github.png"/>
               </div>
               <div class="col-lg-8">
                 <h3>Github</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lacinia risus id tortor commodo, nec fermentum nisl consectetur. </p>
+                <p>GitHub is the largest code host on the planet with over 20 million repositories. Large or small, every repository comes with the same powerful tools. These tools are open to the community for public projects and secure for private projects.</p>
               </div>
             </div>
           </div>
+
         </div>
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="row">
-              <div class="col-lg-4">
-                <img src="images/tech/java.png"/>
-              </div>
-              <div class="col-lg-8">
-                <h3>Java</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lacinia risus id tortor commodo, nec fermentum nisl consectetur. </p>
-              </div>
-            </div>
-          </div> 
-        </div>
-      </div>
     </div>
   </div>
-    <div class="container-fluid" id="how-we-work">
+
+
+  <!-- How We Work -->
+
+    <div class="container-fluid offset-anchor" id="how-we-work">
       <div class="container">
         <h2 class="text-center">How we work</h2>
         <div class="row">
@@ -228,10 +292,10 @@
               </div>
               <div class="col-lg-8">
                 <h3>We analyze</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lacinia risus id tortor commodo, nec fermentum nisl consectetur. </p>
+                <p>To really understand your needs</p>
               </div>
             </div>
-          </div> 
+          </div>
           <div class="col-lg-4">
             <div class="row">
               <div class="col-lg-4">
@@ -239,7 +303,7 @@
               </div>
               <div class="col-lg-8">
                 <h3>We prototype</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lacinia risus id tortor commodo, nec fermentum nisl consectetur. </p>
+                <p>To make sure we do it right</p>
               </div>
             </div>
           </div>
@@ -250,7 +314,7 @@
               </div>
               <div class="col-lg-8">
                 <h3>We test</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lacinia risus id tortor commodo, nec fermentum nisl consectetur. </p>
+                <p>To make sure it’s perfect</p>
               </div>
             </div>
           </div>
@@ -263,10 +327,10 @@
               </div>
               <div class="col-lg-8">
                 <h3>We make nice</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lacinia risus id tortor commodo, nec fermentum nisl consectetur. </p>
+                <p>Because we are proud of our work</p>
               </div>
             </div>
-          </div> 
+          </div>
           <div class="col-lg-4">
             <div class="row">
               <div class="col-lg-4">
@@ -274,7 +338,7 @@
               </div>
               <div class="col-lg-8">
                 <h3>We release</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lacinia risus id tortor commodo, nec fermentum nisl consectetur. </p>
+                <p>Just as we promised</p>
               </div>
             </div>
           </div>
@@ -285,16 +349,70 @@
               </div>
               <div class="col-lg-8">
                 <h3>We support and maintain</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lacinia risus id tortor commodo, nec fermentum nisl consectetur. </p>
+                <p>So you’re not left with issues</p>
               </div>
             </div>
+          </div>
+        </div>
+        </div>
+      </div>
+
+  <!-- OUR CLIENTS -->
+
+  <div class="container-fluid offset-anchor" id="our-clients">
+    <div class="container">
+    <h2 class="text-center">Our Clients</h2>
+    <div class="row">
+      <div class="col-lg-4 text-center">
+        <img src="images/clients/dft.jpg"/>
+      </div>
+      <div class="col-lg-4 text-center">
+        <img src="images/clients/inboundsound.png"/>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- Who We Are -->
+
+  <div class="container-fluid offset-anchor" id="who-we-are">
+    <div class="container">
+      <h2 class="text-center">Who we are</h2>
+      <div class="row text-center">
+        <div class="col-lg-12">
+        <p class="lead">Our teams are based in the US, Europe, Cape Town and Johannesburg.</p>
+      </div>
+      </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <p><strong>Jeanre Swanepoel</strong> is a software architect and the founder of Ikhasi Digital, a small software company based in Cape Town and Johannesburg, South Africa. He has over 10 years experience in software development and infrastructure management, with proficiency in Node.JS, Java, .NET, Ruby on Rails and Python. He brings experience in building large scale video streaming applications, high volume realtime communication platforms and large e-commerce solutions.</p>
+          </div>
+          <div class="col-lg-6">
+            <p><strong>Frank Klopper</strong> is an industry veteran with 30 years experience in software development in Financial Services and other industries. Frank has controlled large scale development projects and teams with massive budgets on mission critical development projects, of which some projects have lasted over 10 years. Frank brings strong web development experience with a flair for sales and marketing. Frank is based in Johannesburg and looks after iKhasi clients in the area.</p>
           </div>
         </div>
 
         </div>
       </div>
-    </div>
-  </div>
+
+    <!-- HIRE US -->
+
+    <div class="container-fluid offset-anchor" id="hire-us">
+      <div class="container">
+        <h2 class="text-center">Hire Us</h2>
+        <div class="row text-center">
+          <div class="col-lg-12">
+          <p class="lead">You can contact us via:</p>
+        <p><strong>E-mail</strong></p>
+          <p>jeanre.swanepoel@ikhasi.com</p>
+            <p><strong>Phone</strong></p>
+              <p>0825653345</p>
+           </div>
+          </div>
+         </div>
+        </div>
+
+
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
