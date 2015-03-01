@@ -1,28 +1,31 @@
 body {
+  margin-top: 100px;
 }
 
 .navbar {
   height: 100px;
+  box-shadow: 0px 0px 5px #888888;
   background-color: #fff;
   margin-bottom:0;
+  border-bottom: 1px solid #ccc;
 }
 
 .navbar-nav > li > a {
   padding-top: 0px;
   color:#4e4e4e;
+  background-color: #ffffff;
   padding-bottom: 0px;
-  line-height: 100px;
+  line-height: 99px;
 }
 
 
 .navbar-nav > li > a:hover {
-  background-color: #ffffff;
+  background-color: #ffffff !important;
   padding-bottom: 0px;
   padding-top: 0px;
-  line-height:100px;
+  line-height:99px;
+  border-bottom: 1px solid #ccc;
 }
-
-
 
 .intro {
   background: url('../images/intro.jpg') top center;
@@ -33,29 +36,51 @@ body {
   background-color: #f5f5f5;
 }
 
-#about-us {
+#the-tech-stuff {
+  background-color: #ffffff;
+}
+
+#how-we-work {
   background-color: #f5f5f5;
 }
 
-#about-us .row, #our-work .row, #our-craft .row, #the-tech-stuff .row, #how-we-work .row {
+#our-clients {
+  background-color: #ffffff;
+}
+
+#who-we-are {
+  background-color: #f5f5f5;
+}
+
+#hire-us {
+  background-color: #ffffff;
+}
+
+#our-craft .row, #the-tech-stuff .row, #how-we-work .row, #our-clients .row, #who-we-are .row, #hire-us .row {
   margin-bottom:15px;
   margin-top:15px;
 }
 
-#our-craft, #the-tech-stuff, #how-we-work {
+#our-craft, #the-tech-stuff, #how-we-work, #our-clients, #who-we-are, #hire-us {
   padding-top:20px;
   padding-bottom:20px;
 }
-#about-us p,
 #our-craft p,
 #the-tech-stuff p,
-#how-we-work p {
-  font-size: 12px;
+#how-we-work p,
+#our-clients p,
+#who-we-are p,
+#hire-us p {
+  font-size: 15px;
 }
 
 #our-craft h2,
 #the-tech-stuff h2,
-#how-we-work h2 {
+#how-we-work h2,
+#our-clients h2,
+#who-we-are  h2,
+#hire-us h2 {
+
   color: #55565b;
   font-size: 40px;
 }
@@ -70,13 +95,12 @@ body {
 
 #our-craft img,
 #how-we-work img,
-#the-tech-stuff img {
+#the-tech-stuff img,
+#our-clients img {
   height: 80px;
 }
 
-#how-we-work {
-  background-color: #f5f5f5;
-}
+
 
 .lead {
   font-size: 20px !important;
@@ -90,4 +114,20 @@ body {
 
 #our-work img {
   height: 80px;
+}
+
+
+.offset-anchor {
+  border-top: 75px solid transparent;
+  margin: -75px 0 0;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+}
+
+// Because offset-anchor causes sections to overlap the bottom of previous ones,
+// we need to put content higher so links aren't blocked by the transparent border.
+.container-fluid {
+  position: relative;
+  z-index: 1;
 }
